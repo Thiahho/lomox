@@ -1,0 +1,79 @@
+# RESTRINGIR ACCESO A LAS CARPETAS SIN INDEX
+# Options All -Indexes
+
+# Vistas
+RewriteEngine on
+# Home
+RewriteRule ^$ index.php
+RewriteRule ^/$ index.php
+RewriteRule ^inicio$ index.php
+RewriteRule ^home$ index.php
+# Productos
+RewriteRule ^productos$ views/productos.php
+RewriteRule ^productos$ /views/productos.php
+# Ventas
+    #INGRESO Consulta Ventas
+        RewriteRule ^ventas$ views/ventas/ventas.php
+        RewriteRule ^ventas$ /views/ventas/ventas.php
+        ##
+        RewriteRule ^crear_venta$ views/ventas/ventas_crear.php
+        RewriteRule ^crear_venta$ /views/ventas/ventas_crear.php
+    #IMPUESTOS
+        RewriteRule ^impuestosIVA$ views/ventas/impuestosIVA.php
+        RewriteRule ^impuestosIVA$ /views/ventas/impuestosIVA.php
+        RewriteRule ^impuestosIIBB$ views/ventas/impuestosIIBB.php
+        RewriteRule ^impuestosIIBB$ /views/ventas/impuestosIIBB.php
+    #Buscar Venta 
+        RewriteRule ^bVentaTotal$ views/ventas/bVentaTotal.php
+        RewriteRule ^bVentaTotal$ /views/ventas/bVentaTotal.php
+        RewriteRule ^bVentaCliente$ views/ventas/bVentaCliente.php
+        RewriteRule ^bVentaCliente$ /views/ventas/bVentaCliente.php
+        RewriteRule ^bVentaPromedio$ views/ventas/bVentaPromedio.php
+        RewriteRule ^bVentaPromedio$ /views/ventas/bVentaPromedio.php
+    #Stock Vendido
+    RewriteRule ^stockVendidoHoy$ views/ventas/stockVendidoHoy.php
+    RewriteRule ^stockVendidoHoy$ /views/ventas/stockVendidoHoy.php
+
+#Compras
+    #Ingreso Factura/Remito
+        RewriteRule ^ingresoFacRem$ views/compras/ingresoFacRem.php
+        RewriteRule ^ingresoFacRem$ /views/compras/ingresoFacRem.php
+    #Pago de Compras/Productos
+        RewriteRule ^pagoDeCompraProducto$ views/compras/pagoDeCompraProducto.php
+        RewriteRule ^pagoDeCompraProducto$ /views/compras/pagoDeCompraProducto.php 
+    #Pago Salarios
+        RewriteRule ^pagoSalarios$ views/compras/pagoSalarios.php
+    #Pago Servicios
+        RewriteRule ^pagoServicios$ views/compras/pagoServicios.php
+        RewriteRule ^pagoServicios$ /views/compras/pagoServicios.php
+#StocK
+    #Ingreso Productos 
+        RewriteRule ^ingresoProducto$ views/stock/ingresoProducto.php
+        RewriteRule ^ingresoProducto$ /views/stock/ingresoProducto.php
+    #Productos y proveedores 
+        RewriteRule ^productoProveedores$ views/stock/productoProveedores.php
+        RewriteRule ^productoProveedores$ /views/stock/productoProveedores.php
+    #Consulta a frigorifico 
+        RewriteRule ^consultaFrigorifico$ views/stock/consultaFrigorifico.php
+        RewriteRule ^consultaFrigorifico$ /views/stock/consultaFrigorifico.php
+    #Pedidos / abastecimientos 
+        RewriteRule ^pedidoAbastecimiento$ views/stock/pedidoAbastecimiento.php
+        RewriteRule ^pedidoAbastecimiento$ /views/stock/pedidoAbastecimiento.php
+    #Rendimiento 1/2 Res
+        RewriteRule ^rendimientoRes$ views/stock/rendimientoRes.php
+        RewriteRule ^rendimientoRes$ /views/stock/rendimientoRes.php
+#Administracion
+RewriteRule ^administracion$ views/administracion.php
+RewriteRule ^administracion$ /views/administracion.php
+#Estadistica
+RewriteRule ^estadistica$ views/estadistica.php
+RewriteRule ^estadistica$ /views/estadistica.php
+# Sucursales
+RewriteRule ^sucursales$ views/sucursales.php
+RewriteRule ^sucursales$ /views/sucursales.php
+# Login
+RewriteRule ^login$ views/login.php
+RewriteRule ^login$ /views/login.php
+# Registro Usuario
+RewriteRule ^registro_usuario$ views/registro_usuario.php
+RewriteRule ^registro_usuario$ /views/registro_usuario.php

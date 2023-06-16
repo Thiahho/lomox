@@ -1,0 +1,150 @@
+/* body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+} */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contenedor-log{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contenedorventas{
+    color: green;
+    background-color: red; /* color de fondo */
+    height: 300px; /* altura del div */
+    width: 200px; /* ancho del div */
+    padding: 20px; 
+}
+
+#botonera{
+    display: flex;
+    padding-right: 150px;
+}
+
+#mi-tablero {
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+h1{
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px;
+}
+
+
+/*
+.input-contenedor{
+    margin-bottom: 20px;
+    border: 1px solid #aaa;
+}*/
+.icon{
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+.button{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background:  #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.button:hover{
+    background: cadetblue;
+}
+p{
+    text-align: center;
+}
+.link{
+    text-decoration: none;
+      color: #1a2537;
+    font-weight: 600;
+}
+.link:hover{
+     color: cadetblue;
+}
+@media(min-width:768px)
+{
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+}
+
+.dropdown{
+	right:50;
+}
+
+.row{
+	margin: 10px 20px 30px 40px;
+}
+
+.regis{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 40%;
+}
+.olvide-contra{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 40%;
+    padding-left: 5%;
+}
+
+
+.alerta{
+    text-align: center;
+    color: red;
+}
+
+.success{
+    text-align: center;
+    color: green;
+}
+
+/*
+.login{
+    width: 100%;
+    height: 1000px;
+    margin: auto;
+    background-color: aqua;
+}
+
+.login-2{
+    margin-bottom: 20px;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    padding-top: 5%;
+    background-color: blue;    
+    position: absolute;
+    left: 40%;
+    margin-top: 5%;
+    border-radius: 5%;
+
+}
+
+.form{
+    padding: 5%;
+}
+*/
+/*
+.login label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}*/
+
